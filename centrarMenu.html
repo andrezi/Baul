@@ -1,0 +1,86 @@
+<html>
+	<head>
+		<title> centrar item </title>
+		<style type="text/css">
+		
+		.container {
+			clear:both;
+			float:left;
+			overflow:hidden;
+			width:100%;
+		}
+
+		#menu {
+			float:left;
+			left:50%;
+			list-style-type:none;
+			margin:0 auto;
+			padding:0;
+			position:relative;
+		}
+
+
+		#menu li {
+			float:left;
+			position:relative;
+			right:50%;
+			
+		}		
+		
+		</style>
+
+<h1>centrar item del menu sin importar la cantidad de item</h1>
+
+<div class="container">
+<ul id="menu">
+<li>
+<a href="#">Item 1</a>
+</li>
+<li>
+&nbsp;&nbsp;<a href="#">Item 10</a>
+</li>
+<li>
+&nbsp;&nbsp;<a href="#">Item 13</a>
+</li>
+<li>
+&nbsp;&nbsp;<a href="#">Item 31</a>
+</li>
+<li>
+&nbsp;&nbsp;<a href="#">Item 131</a>
+</li>
+<li>
+&nbsp;&nbsp;<a href="#">Item 23</a>
+</li>
+<li>
+&nbsp;&nbsp;<a href="#">Item 312</a>
+</li>
+</ul>
+</div>
+
+
+CSS
+<br/>
+<code>
+.container {
+clear:both;
+float:left;
+overflow:hidden;
+width:100%;
+}
+
+#menu {
+float:left;
+left:50%;
+list-style-type:none;
+margin:0 auto;
+padding:0;
+position:relative;
+}
+
+#menu li {
+float:left;
+position:relative;
+right:50%;
+padding-left:1.1em;
+}
+</code>
